@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/operators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/operators"
+            android:padding="5dp"
+            android:contentDescription="operators"/>
+
+        <TextView
+            android:id="@+id/setting_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operators"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="SETTINGS"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/sound_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_head"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/music_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/music_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="MUSIC  :"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/music_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/music_label" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sfx_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/music_panel">
+
+                <TextView
+                    android:id="@+id/sfx_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="SFX  :"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/sfx_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/sfx_label" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sound_panel"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ripple"
+            android:padding="20dp"
+            android:text="Reset"
+            android:textColor="#ff333333"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ripple"
+            android:padding="20dp"
+            android:text="Back"
+            android:textColor="#ff333333"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
